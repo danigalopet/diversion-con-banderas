@@ -8,3 +8,54 @@ body {
 h1 {
   color: #333;
 }
+
+#countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.country {
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.country img {
+  width: 150px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+#country-detail {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#country-detail.hidden {
+  display: none;
+}
+
+#close-detail {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#country-info {
+  margin-top: 10px;
+}
